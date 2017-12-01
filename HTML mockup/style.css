@@ -9,14 +9,14 @@ header
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(landing.jpg);
     height: 100vh;
     background-size: cover;
-    background-position center;
+    background-position: center;
 }
 
 .main-nav
 {
     float: right;
     list-style: none;
-    margin-top: 30px;
+    margin: 25px;
 }
 
 .main-nav li
@@ -42,9 +42,10 @@ header
 .choose
 {
     position: absolute;
-    width: 1300px;
-    margin-left: 0px;
-    margin-top: 240px;
+    width: 100%;
+	margin: 0 auto;
+	top: 40%;
+	text-align: center;
 }
 
 h1
@@ -58,11 +59,10 @@ h1
 
 .mark-bt
 {
-    position: absolute;
-    margin-left: 450px;
-    margin-top: 0px;
+	position: relative;
+	margin-top: 25px;
     list-style: none;
-    width: 1350px;    
+    width: 100%;    
 }
 
 .mark-bt li
