@@ -1,0 +1,28 @@
+textarea {
+    display: block;
+    box-sizing: padding-box;
+    overflow: hidden;
+    padding: 10px;
+    width: 250px;
+    font-size: 14px;
+    margin: 50px auto;
+    border-radius: 6px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    border: 0;
+  }
+  header
+  {
+      background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(landing.jpg);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+  }
+  h1
+  {
+      color: white;
+      text-transform: uppercase;
+      font-size: 50px;
+      text-align: center;
+      font-family: "Arkhip";
+  }
+  
