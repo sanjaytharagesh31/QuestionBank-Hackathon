@@ -1,0 +1,86 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(landing.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position center;
+}
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    font-family: "Dense";
+    font-size: 40px;
+}
+
+.main-nav li a:hover
+{
+    border: 3px solid white;
+    color: darkcyan;
+    
+}
+
+.choose
+{
+    position: absolute;
+    width: 1300px;
+    margin-left: 0px;
+    margin-top: 240px;
+}
+
+h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Arkhip";
+}
+
+.mark-bt
+{
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 0px;
+    list-style: none;
+    width: 1350px;    
+}
+
+.mark-bt li
+{
+    display: inline-block;
+}
+
+.mark-bt li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 30px;
+    border: 1px solid white;
+    font-family: "Dense";
+    font-size: 50px;
+}
+
+.mark-bt li a:hover
+{
+    color: darkcyan;
+}
