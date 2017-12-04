@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>QuestionBank-Hackathon</title>
+		<meta name="description" content="Hackathon website" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="fs-form-wrap" id="fs-form-wrap">
+				<div class="fs-title">
+					<h1>Come, Contribute.</h1>
+				</div>
+				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
+					<ol class="fs-fields">
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q1" data-info="This will help identify the marks assigned to this question">Choose marks:</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q1a" name="q1" type="radio" value="1"/><label>2</label></span>
+								<span><input id="q1b" name="q1" type="radio" value="2"/><label>3</label></span>
+								<span><input id="q1c" name="q1" type="radio" value="3"/><label for=>5</label></span>
+							</div>
+						</li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q2" data-info="This will help identify subject">Choose subject:</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q2a" name="q2" type="radio" value="phy"/><label>Physics</label></span>
+								<span><input id="q2b" name="q2" type="radio" value="chem"/><label>Chemistry</label></span>
+								<span><input id="q2c" name="q2" type="radio" value="math"/><label for=>Mathematics</label></span>
+							</div>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q3">Enter question: </label>
+							<textarea class="fs-anim-lower" id="q3" name="q3" placeholder="Question here"></textarea>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q4">Enter answer: </label>
+							<textarea class="fs-anim-lower" id="q4" name="q4" placeholder="Answer here"></textarea>
+						</li>
+					</ol><!-- /fs-fields -->
+					<button class="fs-submit" type="submit">Submit</button>
+				</form><!-- /fs-form -->
+			</div><!-- /fs-form-wrap -->
+
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/selectFx.js"></script>
+		<script src="js/fullscreenForm.js"></script>
+		<script>
+			(function() {
+				var formWrap = document.getElementById( 'fs-form-wrap' );
+
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
+					new SelectFx( el, {
+						stickyPlaceholder: false,
+						onChange: function(val){
+							document.querySelector('span.cs-placeholder').style.backgroundColor = val;
+						}
+					});
+				} );
+
+				new FForm( formWrap, {
+					onReview : function() {
+						classie.add( document.body, 'overview' ); // for demo purposes only
+					}
+				} );
+			})();
+		</script>
+	</body>
+</html>
