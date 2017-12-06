@@ -19,7 +19,7 @@ html, body, .container {
 }
 
 body {
-	background: #121213;
+	background: #3b3f45;
 	color: #fff;
 	font-weight: 400;
 	font-size: 1em;
@@ -30,7 +30,7 @@ body {
 }
 
 a {
-	color: rgba(255, 255, 255, 0.3);
+	color: rgba(0,0,0,0.3);
 	text-decoration: none;
 	outline: none;
 }
@@ -86,5 +86,50 @@ a:hover, a:focus {
 
 .codrops-icon:hover span {
 	display: block;
-	color: #f3f3f3;
+	color: #6a7b7e;
+}
+
+/* Related demos */
+.related {
+	font-weight: 700;
+	text-align: center;
+	padding: 5em 0;
+	display: none;
+	background: #fff;
+	color: rgba(0,0,0,0.3);
+}
+
+.overview .related {
+	display: block;
+}
+
+.related > a {
+	border: 3px solid black;
+	border-color: initial;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+}
+
+.related > a:hover,
+.related > a:focus {
+	color: rgba(0,0,0,0.5);
+}
+
+.related a img {
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a h3 {
+	margin: 0;
+	padding: 0.5em 0 0.3em;
+	max-width: 300px;
+	text-align: left;
 }
