@@ -17,7 +17,7 @@
 	left: 0;
 	margin: 0;
 	padding: 40px;
-	width: 100%;
+	width: 95%;
 }
 
 .fs-title h1 {
@@ -131,6 +131,10 @@ button.fs-continue,
 
 /* Hide the submit button */
 .fs-form .fs-submit {
+	display: none;
+}
+
+.fs-form .fs-login {
 	display: none;
 }
 
@@ -398,10 +402,6 @@ button.fs-continue,
 	background: #fffed8;
 }
 
-.fs-form div.cs-select.cs-skin-boxes {
-	display: block;
-}
-
 .fs-form-overview .cs-skin-boxes > span {
 	border-radius: 5px;
 	width: 90px;
@@ -623,7 +623,8 @@ button.fs-continue,
 
 /* Continue button and submit button */
 button.fs-submit,
-button.fs-continue {
+button.fs-continue,
+button.fs-login {
 	padding: 0.6em 1.5em;
 	border: 3px solid #232529;
 	border-radius: 40px;
@@ -637,7 +638,7 @@ button.fs-continue {
 	float: right;
 }
 
-.fs-form-overview .fs-submit {
+.fs-form-overview .fs-submit, .fs-form-overview .fs-login {
 	border-color: #232529;
 	color: #232529;
 }
@@ -652,6 +653,8 @@ button.fs-continue {
 
 button.fs-submit:hover,
 button.fs-submit:focus,
+button.fs-login:hover,
+button.fs-login:focus,
 button.fs-continue:hover {
 	background: #232529;
 	color: #fff;
@@ -868,6 +871,10 @@ input[type=text]::-ms-clear {
 		font-size: 1.25em;
 	}
 
+	button.fs-login {
+		font-size: 1.25em;
+	}
+
 	.fs-message-error {
 		bottom: 1.75em;
 		left: 0;
@@ -883,3 +890,4 @@ input[type=text]::-ms-clear {
 		transform: translate3d(0,0,0);
 	}
 }
+
